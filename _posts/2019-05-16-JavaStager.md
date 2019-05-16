@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java Stager: ファイルレス
+title:  Java Stager
 date:   2019-05-16 15:15:07 +0900
 categories: [Binary]
 ---
