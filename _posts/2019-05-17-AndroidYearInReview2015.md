@@ -435,6 +435,21 @@ Androidセキュリティチームは、4層システムを使用して脆弱性
                     アプリケーションを削除することで解決できます）
 
 
+
+|---
+| Default aligned | Left aligned | Center aligned | Right aligned
+|-|:-|:-:|-:
+| First body part | Second cell | Third cell | fourth cell
+| Second line |foo | **strong** | baz
+| Third line |quux | baz | bar
+|---
+| Second body
+| 2 line
+|===
+| Footer row
+
+
+
 新しい脆弱性は、Androidセキュリティチームの内部的な取り組みと外部のセキュリティ研究者の報告を組み合わせて発見されています。 Googleは、Androidセキュリティ脆弱性リワードプログラムを通じて、脆弱性の責任ある開示をサポートし、奨励しています。
 
 #### Androidセキュリティリワードプログラム
