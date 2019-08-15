@@ -372,7 +372,7 @@ Dolan-Gavittらは、性能評価[14]に使用できるバイナリ解析のた�
 
 - [41] Voss, N.: afl-unicorn: Fuzzing arbitrary binary code (October 2017), https://hackernoon.com/afl-unicorn-fuzzing-arbitrary-binary-code-563ca28936bf
 
-- [42] Vyukov, D.: Add fuzzing coverage support (2015), https://gcc:gnu:org/viewcvs/gcc?view=revision&revision=231296
+- [42] Vyukov, D.: Add fuzzing coverage support (2015), https://gcc.gnu.org/viewcvs/gcc?view=revision&revision=231296
 
 - [43] Zalewski, M.: Technical "whitepaper" for AFL-fuzz (2016)
 
