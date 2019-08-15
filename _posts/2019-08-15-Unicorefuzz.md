@@ -5,11 +5,9 @@ date:   2019-08-15 19:00:00 +0900
 categories: [fuzz]
 ---
 
-# Unicorefuzz:カーネル空間でのエミュレーションの可能性について
-
 - [Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing](https://www.usenix.org/system/files/woot19-paper_maier.pdf) を翻訳したものです
 
-## アブストラクト
+# アブストラクト
 
 Fuzzingは、深刻な脆弱性を次々と発見している。ターゲットがクラッシュするまで実行するという単純な概念にもかかわらず。ファズ・テストの設定は複雑な問題を引き起こす可能性がある。これは特に、デバイスドライバーやカーネルコンポーネントなど、デスクトップオペレーティングシステムでユーザーランドプロセスの一部として実行できないコードに当てはまる。本論文では,カーネル空間における任意のパーサをカバーベースのフィードバックでファズするためのCPUエミュレーションの利用を検討した。筆者らは、オープンソースのUnicorefuzzを提案し、エミュレーション型ファジングアプローチの利点と落とし穴を説明した。このアプローチの実行可能性を、人工Linuxカーネルモジュール、Open vSwitchネットワーク仮想化コンポーネント、およびsyzkallerによって最初に発見されたバグに対して評価した。エミュレータベースのカーネルコードのファジングは、設定がそれほど複雑ではなく、ソースコードが利用できないオペレーティングシステムやデバイスをファズするためにも使用することができる。
 
@@ -298,9 +296,9 @@ Dolan-Gavittらは、性能評価[14]に使用できるバイナリ解析のた�
 
 - [3] Bellard, F.: Qemu, a fast and portable dynamic translator. In: USENIX Annual Technical Conference, FREENIX Track. vol. 41, p. 46 (2005)
 
-- [4] Biondo, A.: Improving afl’s qemu mode performance. 0x41414141 in ?? () (Sep 2018), https://abiondo:me/2018/09/21/improvingafl- qemu-mode
+- [4] Biondo, A.: Improving afl’s qemu mode performance. 0x41414141 in ?? () (Sep 2018), https://abiondo.me/2018/09/21/improvingafl-qemu-mode
 
-- [5] Brunson, T.: How to Spot Good Fuzzing Research (Oct 2018), https://blog:trailofbits:com/2018/ 10/05/how-to-spot-good-fuzzing-research, - [Online; accessed 11. Nov. 2018]
+- [5] Brunson, T.: How to Spot Good Fuzzing Research (Oct 2018), https://blog.trailofbits.com/2018/10/05/how-to-spot-good-fuzzing-research , - [Online; accessed 11. Nov. 2018]
 
 - [6] Butti, L., Tinnes, J.: Discovering and exploiting 802.11 wireless driver vulnerabilities. Journal in Computer Virology 4(1), 25.37 (2008)
 
@@ -324,39 +322,39 @@ Dolan-Gavittらは、性能評価[14]に使用できるバイナリ解析のた�
 
 - [16] Drewry,W.A., Ormandy, T.: Software testing using taint analysis and execution path alteration (Feb 2013), uS Patent 8,381,192
 
-- [17] Drysdale, D.: Coverage-guided kernel fuzzing with syzkaller (2016), https://lwn:net/Articles/ 677764/
+- [17] Drysdale, D.: Coverage-guided kernel fuzzing with syzkaller (2016), https://lwn.net/Articles/677764/
 
 - [18] Duran, J.W., Ntafos, S.: A report on random testing. In: Proceedings of the 5th international conference on Software engineering. pp. 179.183. IEEE Press (1981)
 
-- [19] Falk, B.: Vectorized Emulation: Hardware accelerated taint tracking at 2 trillion instructions per second (Oct 2018), https://gamozolabs:github:io/fuzzing/ 2018/10/14/vectorized_emulation:html, - [Online; accessed 11. Nov. 2018]
+- [19] Falk, B.: Vectorized Emulation: Hardware accelerated taint tracking at 2 trillion instructions per second (Oct 2018), https://gamozolabs.github.io/fuzzing/2018/10/14/vectorized_emulation.html , - [Online; accessed 11. Nov. 2018]
 
-- [20] Foote, J.: Exploitable (2018), https://github:com/ jfoote/exploitable, - [Online; accessed 2018-09-09]
+- [20] Foote, J.: Exploitable (2018), https://github.com/jfoote/exploitable , - [Online; accessed 2018-09-09]
 
-- [21] Hertz, J., Newsham, T.: Project triforce, https://raw:githubusercontent:com/ nccgroup/TriforceAFL/master/slides/ ToorCon16_TriforceAFL:pdf
+- [21] Hertz, J., Newsham, T.: Project triforce, https://raw.githubusercontent.com/nccgroup/TriforceAFL/master/slides/ToorCon16_TriforceAFL.pdf
 
 - [22] Huang, S.K., Huang, M.H., Huang, P.Y., Lai, C.W., Lu, H.L., Leong,W.M.: Crax: Software crash analysis for automatic exploit generation by modeling attacks as symbolic continuations. In: 2012 IEEE Sixth International Conference on Software Security and Reliability. pp. 78. 87 (Jun 2012). https://doi.org/10.1109/SERE.2012.20
 
-- [23] Kernel.org: kcov: code coverage for fuzzing, https://www:kernel:org/doc/html/v4:17/devtools/ kcov:html
+- [23] Kernel.org: kcov: code coverage for fuzzing, https://www.kernel.org/doc/html/v4.17/devtools/kcov.html
 
-- [24] Kerrisk, M.: Lca: The trinity fuzz tester (2013), https: //lwn:net/Articles/536173/
+- [24] Kerrisk, M.: Lca: The trinity fuzz tester (2013), https://lwn.net/Articles/536173/
 
-- [25] Klees, G., Ruef, A., Cooper, B., Wei, S., Hicks, M.: Evaluating fuzz testing. CoRR abs/1808.09700 (2018), http://arxiv:org/abs/1808:09700
+- [25] Klees, G., Ruef, A., Cooper, B., Wei, S., Hicks, M.: Evaluating fuzz testing. CoRR abs/1808.09700 (2018), http://arxiv.org/abs/1808.09700
 
-- [26] Lemieux, C., Sen, K.: Fairfuzz: Targeting rare branches to rapidly increase greybox fuzz testing coverage. CoRR abs/1709.07101 (2017), http://arxiv:org/ abs/1709:07101
+- [26] Lemieux, C., Sen, K.: Fairfuzz: Targeting rare branches to rapidly increase greybox fuzz testing coverage. CoRR abs/1709.07101 (2017), http://arxiv.org/abs/1709.07101
 
-- [27] LLVMProject: libFuzzer . a library for coverage-guided fuzz testing. (Sep 2018), https://llvm:org/docs/ LibFuzzer:html, - [Online; accessed 15. Sep. 2018]
+- [27] LLVMProject: libFuzzer . a library for coverage-guided fuzz testing. (Sep 2018), https://llvm.org/docs/LibFuzzer.html, - [Online; accessed 15. Sep. 2018]
 
 - [28] Miller, C.: Crash analysis with bitblaze. Blackhat (2010)
 
-- [29] Mu, D., Cuevas, A., Yang, L., Hu, H., Xing, X., Mao, B., Wang, G.: Understanding the reproducibility of crowd-reported security vulnerabilities. In: Enck, W., Felt, A.P. (eds.) 27th USENIX Security Symposium, USENIX Security 2018, Baltimore, MD, USA, August 15-17, 2018. pp. 919.936. USENIX Association (2018), https://www:usenix:org/conference/ usenixsecurity18/presentation/mu
+- [29] Mu, D., Cuevas, A., Yang, L., Hu, H., Xing, X., Mao, B., Wang, G.: Understanding the reproducibility of crowd-reported security vulnerabilities. In: Enck, W., Felt, A.P. (eds.) 27th USENIX Security Symposium, USENIX Security 2018, Baltimore, MD, USA, August 15-17, 2018. pp. 919.936. USENIX Association (2018), https://www.usenix.org/conference/usenixsecurity18/presentation/mu
 
-- [30] Muench, M., Francillon, A., Balzarotti, D.: Avatar2: A multi-target orchestration platform. In: BAR 2018, Workshop on Binary Analysis Research, colocated with NDSS Symposium, 18 February 2018, San Diego, USA. San Diego, UNITED STATES (Feb 2018), http:// www:eurecom:fr/publication/5437
+- [30] Muench, M., Francillon, A., Balzarotti, D.: Avatar2: A multi-target orchestration platform. In: BAR 2018, Workshop on Binary Analysis Research, colocated with NDSS Symposium, 18 February 2018, San Diego, USA. San Diego, UNITED STATES (Feb 2018), http://www.eurecom.fr/publication/5437
 
-- [31] Ngyuen, A.Q., Dang, H.V.: Unicorn: Next generation cpu emulator framework, http://www:unicornengine :org/BHUSA2015-unicorn:pdf
+- [31] Ngyuen, A.Q., Dang, H.V.: Unicorn: Next generation cpu emulator framework, http://www.unicornengine.org/BHUSA2015-unicorn.pdf
 
-- [32] Nikolich, A.: Afl fuzzing blackbox binaries (2015), https://groups:google:com/forum/#!topic/aflusers/ HlSQdbOTlpg
+- [32] Nikolich, A.: Afl fuzzing blackbox binaries (2015), https://groups.google.com/forum/#!topic/aflusers/HlSQdbOTlpg
 
-- [33] Nossum, V., Casasnovas, Q.: Filesystem fuzzing with american fuzzy lop (2016), https://events:static:linuxfound:org/sites/ events/files/slides/AFL%20filesystem% 20fuzzing;%20Vault%202016_0:pdf
+- [33] Nossum, V., Casasnovas, Q.: Filesystem fuzzing with american fuzzy lop (2016), https://events.static.linuxfound.org/sites/events/files/slides/AFL%20filesystem%20fuzzing;%20Vault%202016_0.pdf
 
 - [34] Schumilo, S., Aschermann, C., Gawlik, R., Schinzel, S., Holz, T.: kafl: Hardware-assisted feedback fuzzing for OS kernels. In: 26th USENIX Security Symposium (USENIX Security 17). pp. 167.182. USENIX Association, Vancouver, BC (2017)
 
@@ -366,15 +364,15 @@ Dolan-Gavittらは、性能評価[14]に使用できるバイナリ解析のた�
 
 - [37] Shoshitaishvili, Y., Wang, R., Salls, C., Stephens, N., Polino, M., Dutcher, A., Grosen, J., Feng, S., Hauser, C., Kruegel, C., Vigna, G.: SoK: (State of) The Art of War: Offensive Techniques in Binary Analysis. In: IEEE Symposium on Security and Privacy (2016)
 
-- [38] Song, D., Hetzelt, F., Das, D., Spensky, C., Na, Y., Volckaert, S., Vigna, G., Kruegel, C., Seifert, J., Franz, M.: Periscope: An effective probing and fuzzing framework for the hardware-os boundary. In: 26th Annual Network and Distributed System Security Symposium, NDSS 2019, San Diego, California, USA, February 24-27, 2019. The Internet Society (2019), https://www:ndss-symposium:org/ndsspaper/ periscope-an-effective-probing-andfuzzing- framework-for-the-hardware-osboundary/
+- [38] Song, D., Hetzelt, F., Das, D., Spensky, C., Na, Y., Volckaert, S., Vigna, G., Kruegel, C., Seifert, J., Franz, M.: Periscope: An effective probing and fuzzing framework for the hardware-os boundary. In: 26th Annual Network and Distributed System Security Symposium, NDSS 2019, San Diego, California, USA, February 24-27, 2019. The Internet Society (2019), https://www.ndss-symposium.org/ndsspaper/periscope-an-effective-probing-andfuzzing-framework-for-the-hardware-osboundary/
 
 - [39] Sthamer, H.H.: The automatic generation of software test data using genetic algorithms. Ph.D. thesis, University of Glamorgan (1995)
 
-- [40] Thimmaraju, K.: Ve-2018-1000155: Denial of service, improper authentication and authorization, and covert channel in the openflow 1.0+ handshake (2018), https://www:openwall:com/lists/oss-security/ 2018/05/09/4
+- [40] Thimmaraju, K.: Ve-2018-1000155: Denial of service, improper authentication and authorization, and covert channel in the openflow 1.0+ handshake (2018), https://www.openwall.com/lists/oss-security/2018/05/09/4
 
-- [41] Voss, N.: afl-unicorn: Fuzzing arbitrary binary code (October 2017), https://hackernoon:com/ afl-unicorn-fuzzing-arbitrary-binary-code- 563ca28936bf
+- [41] Voss, N.: afl-unicorn: Fuzzing arbitrary binary code (October 2017), https://hackernoon.com/afl-unicorn-fuzzing-arbitrary-binary-code-563ca28936bf
 
-- [42] Vyukov, D.: Add fuzzing coverage support (2015), https://gcc:gnu:org/viewcvs/gcc?view= revision&revision=231296
+- [42] Vyukov, D.: Add fuzzing coverage support (2015), https://gcc:gnu:org/viewcvs/gcc?view=revision&revision=231296
 
 - [43] Zalewski, M.: Technical "whitepaper" for AFL-fuzz (2016)
 
