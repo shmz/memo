@@ -5,6 +5,15 @@ date:   2021-12-28 18:00:00 +0900
 categories: [AI]
 ---
 
+## 要約
+
+### AIのユースケース
+1. 顧客の理解と対話の方法を変更
+2. よりインテリジェントな製品とサービスを提供
+3. ビジネスプロセスを改善および自動化
+
+
+## 原文
 1. Alibaba: Using Artificial Intelligence To Power The Retail And Business-To-Business Services Of The Future
 2. Alphabet and Google: Maximizing The Potential Of Artificial Intelligence
 3. Amazon: Using Deep Learning To Drive Business Performance
@@ -42,6 +51,7 @@ categories: [AI]
 35. Harley-Davidson: Using Artificial Intelligence To Increase Sales
 36. Hopper: Using Artificial Intelligence To Travel For Less
 37. Infervision: Using Artificial Intelligence To Detect Cancer And Strokes
+38. Mastercard: Using Artificial Intelligence To Cut Down The "False Declines" That Cost Businesses Billions Each Year
 39. Salesforce: How Artificial Intelligence Helps Businesses Understand Their Customers
 40. Uber: Using Artificial Intelligence To Do Everything
 41. BMW: Using Artificial Intelligence To Build And Drive The Cars Of Tomorrow
@@ -56,16 +66,36 @@ categories: [AI]
 50. Volvo: Using Machine Learning To Build The World's Safest Cars
 51. Final Words And Artificial Intelligence Challenges
 
-
+## 日本語
 1. アリババ: 人工知能を使用して、将来の小売および企業間サービスを強化する
+   * クラウドサービス
+   * スマートシティ
+   * スマートファーミング
 2. アルファベット・グーグル: 人工知能の可能性を最大化する
+   * よりスマートな検索
+   * パーソナルアシスタント
+   * 言語翻訳
+   * 自動運転
 3. アマゾン: ディープラーニングを使用してビジネスパフォーマンスを促進する
+   * レコメンデーション
+   * 梱包センター
+   * アレクサ
 4. アップル: AIを製品に統合し、ユーザーのプライバシーを保護する
+   * 機械学習できるハンドヘルドデバイス
 5. バイドゥー: 検索エンジンと自動運転車の機械学習
+   * 検索、画像、地図、ビデオ、ニュース、翻訳
+   * 自動運転
+   * リアルタイム翻訳
 6. フェイスブック: ソーシャルメディアサービスを改善するための人工知能の使用
+   * ニュースフィードのパーソナライズ
+   * コンテンツ監視
+   * 顔識別
 7. IBM: コグニティブコンピューティングは、機械が人間と議論するのに役立ちます
+   * Cora
+   * プロジェクトディベーター
 8. JD.com: 人工知能による小売の自動化
-9. マイクロソフト: 人工知能を日常生活の構造の一部にする
+   * 配送、ロジスティクス、サプライチェーンの自動化
+9.  マイクロソフト: 人工知能を日常生活の構造の一部にする
 10. センテント: 人工知能を使用してWeChatとヘルスケアを強化する
 11. バーバリー: 人工知能を使用して贅沢品を販売する
 12. コカコーラ: 人工知能を使用して清涼飲料市場のトップを維持する
@@ -94,6 +124,7 @@ categories: [AI]
 35. ハーレーダビッドソン: 人工知能を使用して売上を増やす
 36. ホッパー: 人工知能を使用してより少ない費用で旅行する
 37. Infervision: 人工知能を使用して癌と脳卒中を検出する
+38. マスターカード: 人工知能を活用し、毎年数十億円の損失を出す「偽減少」を削減する
 39. セールスフォース: 人工知能が企業の顧客理解にどのように役立つか
 40. ウーバー: 人工知能を使用してすべてを行う
 41. BMW: 人工知能を使用して明日の車を作り、運転する
